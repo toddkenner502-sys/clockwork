@@ -1,0 +1,17 @@
+services:
+  worker:
+    build: .
+    image: clockwork:local
+    env_file: .env
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    stop_grace_period: 30s
+    shm_size: "256m"
+    # One container per identity slot:
+    #   docker compose up --scale worker=4
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1200m

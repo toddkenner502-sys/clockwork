@@ -1,0 +1,16 @@
+[Unit]
+Description=Clockwork OTP budget harness
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/clockwork
+ExecStart=/usr/bin/docker compose up -d --scale worker=4
+ExecStop=/usr/bin/docker compose stop
+TimeoutStartSec=300
+
+[Install]
+WantedBy=multi-user.target

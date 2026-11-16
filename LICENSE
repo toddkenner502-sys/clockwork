@@ -1,0 +1,78 @@
+CLOCKWORK LICENSE v1.0
+Copyright (c) 2026 Jayson Todd Kenner (operating as Phoenix Services). All rights reserved
+except as expressly granted below.
+
+This licence covers the Clockwork software: the source files, the in-page client, the relay, the scheduler, the
+documentation and any derivative work (together, "the Software").
+
+1. GRANT
+
+You may use, copy, modify and redistribute the Software, including commercially, subject to the terms below.
+
+2. FREE USE
+
+Running the Software yourself, on your own hardware, for your own engagements — paid or unpaid, internal or
+client-facing — owes nothing. That includes using it to deliver a penetration test, a bug bounty programme or a
+research project.
+
+3. ROYALTY ON SALE
+
+Where the Software, or a derivative of it, is sold, resold, sublicensed for a fee, bundled into a paid product or
+service, or otherwise commercially distributed to any entity, a royalty is owed to the copyright holder.
+
+  3.1  The royalty is up to twenty percent (20%) of the gross amount received for the Software, or for the paid
+       product or service in which it is a material component, per transaction.
+
+  3.2  Twenty percent (20%) applies unless the copyright holder agrees a lower rate in writing. Any agreed reduction
+       applies only to the specific arrangement and period named in that writing.
+
+  3.3  Where a fee is charged on a recurring basis (subscription, retainer, hosted access), the royalty is calculated
+       on each period's gross receipt for so long as the Software remains a material component.
+
+  3.4  Royalty is payable in the same currency as the sale, within thirty (30) days of receipt, or of the close of
+       the period for recurring fees.
+
+  3.5  The seller must, on request and no more often than quarterly, provide a written statement of the sales on
+       which royalty was calculated. Records sufficient to verify the statement are to be kept for three (3) years.
+
+4. ATTRIBUTION
+
+Any distribution, paid or free, must retain this licence, the copyright notice above, and a visible credit to the
+author in the Software's documentation — "Clockwork, by Jayson Todd Kenner (Phoenix Services)" plus the address of the
+original repository.
+
+5. ENFORCEMENT
+
+  5.1  Royalty obligations survive modification, renaming and partial reimplementation: if the Software's method or a
+       substantial portion of its code carries into a new work, this licence carries with it.
+
+  5.2  Failure to pay, to report, or to attribute is a breach. On breach the grant in section 1 terminates for the
+       breaching party thirty (30) days after written notice if the breach is not cured in that time, and use after
+       termination is unlicensed.
+
+  5.3  The copyright holder may bring proceedings for breach, including for unpaid royalty, and is entitled to recover
+       reasonable costs and, where a breach is wilful, enhanced damages where the applicable jurisdiction provides for
+       them.
+
+  5.4  Litigation does not bar the holder from also seeking an injunction, delivery-up, an increased royalty going
+       forward, or the recall of distributed copies.
+
+6. PATENT AND PRIORITY
+
+The method disclosed in `docs/CLOCKWORK.md` is published to establish priority and is licensed for use under the same
+terms. Nothing in this licence grants rights under any patent the holder may later be granted except for the Software
+as supplied.
+
+7. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+8. ACCEPTANCE
+
+Using, copying, modifying or distributing the Software constitutes acceptance of these terms. A party that cannot
+accept them must stop using the Software.
+
+Royalty arrangements, reduced rates and commercial licensing: toddkenner502@gmail.com
