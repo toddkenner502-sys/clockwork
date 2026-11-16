@@ -1,0 +1,4 @@
+# Shows a Sponsor button on the repository.
+# github: [toddkenner502-sys]          # enable once Sponsors is approved
+custom:
+  - "https://github.com/toddkenner502-sys/clockwork#commercial"
