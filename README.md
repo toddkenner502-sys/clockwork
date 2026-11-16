@@ -40,6 +40,22 @@ docker compose up --scale worker=4
 
 Watch `data/hits.txt`. The ledger lives in `data/ledger.json`, so restarts resume instead of replaying.
 
+## Config from a capture
+
+Hand-editing nine target fields is tedious and easy to get wrong. Instead, capture one pass of the flow in the browser
+(DevTools → Network → *Save all as HAR with content*), then:
+
+```bash
+python src/har_import.py capture.har --out .env
+```
+
+It classifies `init` / `sendOtp` / `verifyOtp`, lifts the paths, `loginId`, `clientId`, scope, redirect URI and the
+signed-header list, and leaves proxy credentials blank. Every value is still yours to check — it warns when something
+looks unlike the reference flow rather than guessing.
+
+Capture requirements: one complete pass, JSON bodies retained, and the verify step captured so the flow role is
+identifiable. A partial capture fails loudly with the missing step.
+
 ## Configuration
 
 All via environment (see `.env.example`):
@@ -94,13 +110,21 @@ docs/           method disclosure, architecture, operations
 
 Reference implementation, tested against one target family. Expect to adjust the flow paths and metadata for another.
 
+## Commercial
+
+- **Firm licence** (10%) — internal use by a consultancy, includes config support for your target.
+- **Resale / OEM** (up to 20%) — bundling into a commercial product or hosted service.
+- **Assessment service** — run against your estate by the author, tooling included.
+
+Commercial enquiries and reduced rates: toddkenner502@gmail.com.
+
 ## License
 
 **Clockwork License v1.0** — see `LICENSE`. In short:
 
 - **Free to use, including commercially.** Client work, bug bounties, internal research: no fee.
-- **If you sell it**, or ship it inside something you sell, a royalty of **up to 20%** of the gross receipt is owed to
-  the copyright holder. Lower rates by written agreement.
+- **If you licence it to a firm**, 10% of the licence fee. **If you resell it** or ship it inside something you sell,
+  up to 20% of the gross receipt. Rates negotiable in writing.
 - Attribution, a sales statement on request, and a 30-day cure period before the grant terminates.
 - Non-payment or non-attribution is litigable, including costs and enhanced damages for wilful breach.
 
